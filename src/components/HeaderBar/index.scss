@@ -9,11 +9,14 @@
     align-items: center;
     border-bottom: 1px solid #c1b2b2;
     justify-content: center;
-    > a {
+    > div.a {
       padding: 0.3rem 2rem;
-      text-decoration: none;
       font-size: 1.3rem;
       color: #000000;
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
     }
   }
   .topnav {
@@ -38,26 +41,30 @@
         display: block !important;
       }
 
-      a {
-        color: #000000;
+      div.a {
+        
         padding: 14px 16px;
-        text-decoration: none;
         font-size: 17px;
         display: block;
+        a {
+          text-decoration: none;
+          color: #000000;
+        }
       }
-      a.icon {
+      div.icon {
         display: block;
         position: absolute;
         right: 10px;
         top: 0;
       }
-      a:hover {
+      .a:hover {
         background-color: #ddd;
         color: black;
       }
       .active {
-        background-color:#ffffff;
-        color:#000000;
+        background-color: #ffffff;
+        color: #000000;
+        border-bottom: 1px solid #c3c3c3;
       }
     }
   }

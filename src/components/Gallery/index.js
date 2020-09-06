@@ -9,7 +9,6 @@ class UserGallery extends React.Component {
   }
   render() {
     const photos = getPhotos();
-    console.log(photos);
     return <div className ='gallery_container'>
         <Gallery photos={photos} />
     </div>;

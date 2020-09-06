@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./index.scss";
 
 class HeaderBar extends React.Component {
@@ -17,30 +18,58 @@ class HeaderBar extends React.Component {
     });
   };
 
+  setActiveItem = (activeitem) => {
+    console.log(activeitem);
+    this.setState({
+      activeitem,
+    });
+  };
+
+  handleClose = () =>{
+    console.log('blurring');
+    this.setState({
+      menuActive: false,
+    });
+  }
+
   render() {
     const { activeitem, menuActive } = this.state;
     return (
-      <div className="_conatiner_header">
+      <div className="_conatiner_header" onBlur={this.handleClose}>
         {" "}
         <div className="header_bar">
-          <a href="/home">Home</a>
-          <a href="/gallery">Gallery</a>
-          <a href="/shop">Shop</a>
-          <a href="/contact">Contact us</a>
+        <div className='a'><Link to="/home">Home</Link></div>
+        <div className='a'><Link to="/gallery">Gallery</Link></div>
+        <div className='a'><Link to="/shop">Shop</Link></div>
+        <div className='a'><Link to="/contact">Contact us</Link></div>
         </div>
         <div className="topnav">
-          <a href="#home" className="active">
+          <div href="#home" className="a active">
             {activeitem}
-          </a>
-          <div className={`myLinks ${menuActive ? "active" : ""}`}>
-            <a href="/home">Home</a>
-            <a href="/gallery">Gallery</a>
-            <a href="/shop">Shop</a>
-            <a href="/contact">Contact us</a>
           </div>
-          <a href="javascript:void(0);" className="icon" onClick={this.handleclick}>
+          <div className={`myLinks ${menuActive ? "active" : ""}`}>
+            <div className='a' onClick={() => this.setActiveItem("Home")}>
+              {" "}
+              <Link to="/home">Home</Link>
+            </div>
+            <div className='a' onClick={() => this.setActiveItem("Gallery")}>
+              {" "}
+              <Link to="/gallery">Gallery</Link>
+            </div>
+            <div className='a' onClick={() => this.setActiveItem("Shop")}>
+              <Link to="/shop">Shop</Link>
+            </div>
+            <div className='a' onClick={() => this.setActiveItem("Contact us")}>
+              <Link to="/contact">Contact us</Link>
+            </div>
+          </div>
+          <div
+            href="javascript:void(0);"
+            className="a icon"
+            onClick={this.handleclick}
+          >
             <i className="fa fa-bars"></i>
-          </a>
+          </div>
         </div>
       </div>
     );
