@@ -5,6 +5,7 @@ import GalleryHome from './container/Gallery'
 import Header from "./container/Header";
 import Footer from "./container/Footer";
 import Contact from "./container/Contact";
+import ShopHome from './container/Shop';
 import "./App.scss";
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/shop">
+            <ShopHome />
           </Route>
           <Route path="/gallery">
             <GalleryHome />

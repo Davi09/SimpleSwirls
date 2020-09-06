@@ -25,6 +25,7 @@ class HeaderBar extends React.Component {
         <div className="header_bar">
           <a href="/home">Home</a>
           <a href="/gallery">Gallery</a>
+          <a href="/shop">Shop</a>
           <a href="/contact">Contact us</a>
         </div>
         <div className="topnav">
@@ -34,6 +35,7 @@ class HeaderBar extends React.Component {
           <div className={`myLinks ${menuActive ? "active" : ""}`}>
             <a href="/home">Home</a>
             <a href="/gallery">Gallery</a>
+            <a href="/shop">Shop</a>
             <a href="/contact">Contact us</a>
           </div>
           <a href="javascript:void(0);" className="icon" onClick={this.handleclick}>
