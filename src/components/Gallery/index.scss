@@ -1,0 +1,9 @@
+.gallery_container {
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
+  font-weight: bold;
+  > div {
+    padding: 0.3rem 2rem;
+  }
+}
