@@ -16,4 +16,21 @@
         height: 100%;
         width: 100%;
     }
+    @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin: auto;
+    > div {
+      padding: 0.3rem 1rem;
+    }
+    div.text{
+        padding: 1rem;
+        font-size: 30px;
+        text-align: center;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    }
 }
