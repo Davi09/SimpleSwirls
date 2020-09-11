@@ -41,7 +41,7 @@ class HeaderBar extends React.Component {
         <div className='a'><Link to="/home">Home</Link></div>
         <div className='a'><Link to="/gallery">Gallery</Link></div>
         <div className='a'><Link to="/shop">Shop</Link></div>
-        <div className='a'><Link to="/contact">Contact us</Link></div>
+        <div className='a'><Link to="/contact">Contact me</Link></div>
         </div>
         <div className="topnav">
           <div href="#home" className="a active">
@@ -60,7 +60,7 @@ class HeaderBar extends React.Component {
               <Link to="/shop">Shop</Link>
             </div>
             <div className='a' onClick={() => this.setActiveItem("Contact us")}>
-              <Link to="/contact">Contact us</Link>
+              <Link to="/contact">Contact me</Link>
             </div>
           </div>
           <div
