@@ -4,19 +4,19 @@
     display: flex;
     flex-direction: row;
     font-weight: bold;
-    background: #ffffff;
+    background: #f59fea;
     height: 4rem;
     align-items: center;
     border-bottom: 1px solid #c1b2b2;
     justify-content: center;
-    box-shadow: 2px -5px 4px 9px #888888;
+    box-shadow: 2px -5px 4px 5px #888888;
     > div.a {
       padding: 0.3rem 2rem;
       font-size: 1.3rem;
       color: #000000;
       a {
         text-decoration: none;
-        color: #000000;
+        color:#ffffff;
       }
     }
   }

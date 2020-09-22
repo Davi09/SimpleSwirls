@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import img1 from '../../assets/home/image0.jpeg'; //
-import img2 from '../../assets/home/image1.jpeg'; //
+import img2 from '../../assets/home/image1.jpg'; //
 
 class HomeContainer extends React.Component {
   constructor(props) {
